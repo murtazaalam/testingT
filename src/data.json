@@ -1,0 +1,149 @@
+{
+    "course_name": "Internet of Things",
+    "subtitle": "Curate novice IoT ideas and design your own IoT solutions effectively and cohesively.",
+    "description": "The intricate relationship of the Internet of Things and Big Data opens avenues to connect actuators, sensors, electronics, software to surpass connectivity through humans and personal computers. Revamping and boosting efficiency in performance, reducing human involvement and enhancing economic benefits, the demand for IoT devices is only increasing. It has taken over manual ways of running businesses like the medical industry, what more do you need to know? This specialisation training takes you on an enthralling journey to discover some critical aspects of the Raspberry Pi Platform and image processing and object detection, among everything else.",
+    "learningObjective": [
+        "How to create your own Internet of Things projects independently",
+        "How to use ESP8266 development board using NodeMCU firmware",
+        "How to use different sensors, write LUA programs using IDE, ESPlorer",
+        "How to implement MQTT and M2M practically, controlling things using voice commands",
+        "The concepts surrounding different clouds, e.g. ThingSpeak, CloudMQTT etc",
+        "Using IFTTT, Integration of IFTTT Maker service with ESP8266 Development Board",
+        "How to create your own HTTP to MQTT bridge using AWS Lambda"
+    ],
+    "preRequisites": [
+        "Prior basic-level knowledge of Python.",
+        "A laptop or desktop with basic installations and features."
+    ],
+    "Training Benefits": [
+        "ISO-Certified Certificate of Excellence from IIT Bhubaneswar",
+        " Live, on-demand classes",
+        "30 days of interactive learning",
+        " Career support (internships+placement+aptitude and skill-based training+networking and resume building) after course completion",
+        "Hands-on projects to practice your skills"
+    ],
+    "avgRating": 3.5,
+    "category": "For College",
+    "noOfReviews": 45,
+    "price": 7900,
+    "discount": 2400,
+    "discount_limit_hour": 4,
+    "duration": "4 Weeks",
+    "noOfLectures": 8,
+    "accessMode": "lifetime",
+    "noOfEnrollment": 52,
+    "thumbnail": "url",
+    "gradient": "",
+    "headerImageUrl": "anyurl",
+    "posterImageUrl": "anyurl",
+    "curriculum": [
+        {
+            "heading": "Introduction to Internet of Things",
+            "detail": [
+                "What is Internet?"
+The Technology "Internet of Things"
+Usefulness of IoT
+Professional Benefits
+Applications of IoT
+New and Upcoming Technologies
+            ]
+        },
+        {
+            "heading": "The “Things” explanation",
+            "detail": [
+                Embedded Systems
+                Input and Output Devices
+                Analog and Digital Sensors
+                Actuators
+            ]
+        },
+        {
+            "heading": "Practical",
+            "detail": [
+                Which Device Is Analog And Which One Is Digital?
+ Sensor And Actuator Applications
+To Figure Out Input And Output Devices
+            ]
+        },
+        {
+            "heading": "Embedded System",
+            "detail": [
+                Introduction to Embedded System
+                Components of Embedded Systems
+                The controlling unit “Microcontroller”
+                Hardware Parts
+            ]
+        },
+        {
+            "heading": "Theory",
+            "detail": [
+                Sensors, Demystified
+                Sensors Specification
+                How to Use Sensors
+                Types of Sensors
+                Practical - Calibration of Sensors
+            ]
+        },
+        {
+            "heading": "ANDROID APPLICATION SECURITY",
+            "detail": [
+                "Basic of Android",
+                "Android Application components",
+                "Android Activity Lifecycle",
+                "Application Security Model",
+                "Application Sandboxing",
+                "Android Manifest File",
+                "Android Permission Model",
+                "Secure IPC",
+                "Android Keystore Application Signing",
+                " OWASP Mobile Top 10",
+                " M1: Improper Platform Usage",
+                " M2: Insecure Data Storage",
+                " M3: Insecure Communication",
+                " M4: Insecure Authentication",
+                " M5: Insouciant Cryptography",
+                " M6: Insecure Authorization",
+                " M7: Poor Code Quality",
+                " M8: Code Tampering",
+                " M9: Reverse Engineering",
+                " M10: Extraneous Functionality",
+                " Android Static Analysis",
+                " Types of Security Analysis",
+                " SAST vs DAST",
+                " Apk tool (Decompiling and Recompiling an Application)",
+                " Jadx",
+                " Self-signing an Application (Jar Signer)",
+                " MOBSF",
+                " DROZER",
+                " Dynamic Analysis",
+                " Root Detection",
+                " Frida",
+            ]
+        },
+        {
+            "heading": "METASPLOIT",
+            "detail": [
+                "Need For Metasploit",
+                "Exploitation Basics",
+                "Getting Started With Metasploit",
+                "Metasploit Modules",
+                "Meterpreter Basics",
+                "Post Exploitation",
+            ]
+        },
+        {
+            "heading": "CAPTURE THE FLAG",
+            "detail": [
+                "HackTheBox",
+                "Vulnhub",
+                "PicoCTF",
+                "Over The Wire",
+                "TryHackME",
+                "PentesterLab",
+                "Owasp Juice Shop",
+            ]
+        },
+    ],
+    "isTopCourse": 1,
+    "createdAt": "1/1/22"
+}

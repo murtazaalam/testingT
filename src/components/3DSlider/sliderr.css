@@ -1,0 +1,199 @@
+.slider-div {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  transform-style: preserve-3d;
+  background: #f4f6f9;
+}
+.slide {
+  box-sizing: border-box;
+  padding: 0px;
+  transition-duration: 600ms;
+  text-align: center;
+  margin: 60px 0px;
+}
+.none {
+  display: none;
+}
+.main-slide {
+  display: block;
+  width: 50%;
+  height: 25%;
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  z-index: 1;
+}
+.right-slide {
+  display: block;
+  width: 40%;
+  height: 18%;
+  position: absolute;
+  top: 14%;
+  left: 48%;
+  opacity: 0.5;
+}
+.left-slide {
+  display: block;
+  width: 40%;
+  height: 18%;
+  position: absolute;
+  top: 14%;
+  left: 13%;
+  opacity: 0.5;
+}
+.techvanto-stories-upper-text {
+  font-size: 21px;
+  text-align: center;
+  padding: 10px;
+}
+.left-arrow:hover,
+.techvanto-student-says-arrow:hover {
+  cursor: pointer;
+}
+.left-arrow {
+  width: 30px;
+  height: 30px;
+  background: var(--color-secondary);
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 2px 4px rgba(0, 0, 0, 0.1);
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  padding: 0px 4px 4px 0px;
+}
+.right-arrow:hover,
+.techvanto-student-says-arrow:hover {
+  cursor: pointer;
+}
+.right-arrow {
+  width: 30px;
+  height: 30px;
+  background: var(--color-secondary);
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 2px 4px rgba(0, 0, 0, 0.1);
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  padding: 0px 0px 4px 4px;
+}
+.active-image {
+  border-radius: 8px;
+  box-shadow: 9px 9px 7px rgb(0 0 0 / 50%);
+}
+.date {
+  color: var(--color-secondary-text);
+}
+.place {
+  font-weight: 600;
+  font-size: 22px;
+}
+.story-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow-button {
+  display: flex;
+}
+.arrow-button .left-arrow {
+  margin-right: 20px;
+}
+.story-text {
+  margin: 25px 0px 10px 0px !important;
+}
+@media only screen and (max-width: 600px) {
+  .techvanto-stories {
+    position: relative;
+    left: 30px;
+    height: 70px;
+    width: 70px;
+    top: -35px;
+    background: var(--color-secondary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .story-text {
+    margin: 10px 0px 6px 0px !important;
+  }
+}
+@media screen and (min-width: 300px) {
+  .main-slide {
+    height: 40%;
+  }
+  .right-slide {
+    height: 30%;
+  }
+  .left-slide {
+    height: 30%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-slide {
+    height: 64%;
+  }
+  .right-slide {
+    height: 54%;
+  }
+  .left-slide {
+    height: 54%;
+  }
+  .slider-div {
+    height: 500px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-slide {
+    height: 64%;
+  }
+  .right-slide {
+    height: 55%;
+  }
+  .left-slide {
+    height: 55%;
+  }
+  .slider-div {
+    height: 600px;
+  }
+  .story-heading {
+    flex-direction: row;
+  }
+  .story-heading {
+    padding: 25px 52px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-slide {
+    height: 68%;
+  }
+  .right-slide {
+    height: 59%;
+  }
+  .left-slide {
+    height: 59%;
+  }
+  .slider-div {
+    height: 684px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .main-slide {
+    height: 70%;
+  }
+  .right-slide {
+    height: 61%;
+  }
+  .left-slide {
+    height: 61%;
+  }
+  .slider-div {
+    height: 820px;
+  }
+}

@@ -1,0 +1,14 @@
+.questions-wrap {
+  overflow: scroll;
+  height: 500px;
+}
+.interview-answer {
+  color: var(--color-secondary-text);
+}
+.event-menu h6:first-child {
+  font-weight: 800;
+  color: var(--color-secondary);
+}
+.leftside-interview {
+  display: none;
+}

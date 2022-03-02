@@ -1,0 +1,237 @@
+.course-tab-container {
+  margin: 52px 52px 10px;
+  position: relative;
+}
+.course-tab-container .css-13xfq8m-MuiTabPanel-root {
+  padding-left: 0;
+}
+.course-tab-container .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  width: 200px;
+}
+.course-tab-container h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-primary-text);
+}
+.tab-course-description {
+  width: 100%;
+  margin-top: 10px !important;
+}
+.tab-desc {
+  justify-content: left;
+}
+@media screen and (min-width: 540px){
+  .video-section{
+    right: 20px !important;
+  }
+}
+@media screen and (min-width: 768px){
+  .video-section{
+    top: -154px !important;
+    right: 0px !important;
+  }
+  .video-section{
+    width: 100%
+  }
+  .video-box{
+    width: 100%;
+  }
+  .video{
+    width: 100%
+  }
+  .video img{
+    width: 100%
+  }
+}
+@media (max-width: 911px) {
+  .course-body {
+    padding-top: 44rem;
+    text-align: justify;
+    padding-left: 17px;
+  }
+}
+@media (max-width: 1023px){
+  .course-body{
+    padding-top: 48rem;
+  }
+}
+@media (max-width: 500px) {
+  .course-body {
+    padding-top: 33rem;
+    text-align: justify;
+    padding-left: 17px;
+  }
+}
+@media (max-width: 700px) {
+  .video-section {
+    margin-top: 40px;
+  }
+  .course-tab-container {
+    margin: 52px 2px 52px 2px;
+  }
+}
+@media screen and (min-width: 1024px){
+  .video-section{
+    width: 38%;
+  }
+}
+.curriculum {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.btn-cart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.curriculum .MuiAccordionSummary-content {
+  margin: 24px 0;
+}
+.curriculum .curriculum-heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+.thought {
+  padding-bottom: 20px;
+  margin: 0 16px;
+}
+@media screen and (min-width: 768px){
+  .thought{
+    margin: 0 64px;
+  }
+}
+@media screen and (min-width: 1024px){
+  .thought{
+    margin: 0 50px;
+  }
+}
+.thought p {
+  font-size: 15px;
+  color: #696969;
+}
+.thought-input-field {
+  margin: 0 !important;
+  padding: 10px 14px !important;
+}
+.review-form {
+  flex-direction: column;
+}
+.thought input[type="text"],
+.thought textarea {
+  background: #f8f8f8;
+  border-color: #f8f8f8;
+  color: #252525;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2.5;
+  transition: 0.3s;
+  padding: 3px 20px;
+  min-height: 52px;
+  outline: none;
+  transition: 0.3s;
+}
+.thought textarea {
+  resize: none;
+}
+.thought input[type="text"]:focus,
+.thought textarea:focus {
+  border-color: #88797a;
+  box-shadow: none;
+  background: #fff;
+}
+.thought .check {
+  padding: 0px 10px;
+  width: fit-content;
+}
+.thought .check input {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.thought .check input[type="checkbox"]:focus {
+  box-shadow: none;
+}
+.thought .check span {
+  font-size: 15px;
+  color: #696969;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.thought .check:hover input {
+  border-color: var(--red);
+}
+.thought .comment-submit {
+  width: 140px;
+}
+.thought h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.comment-submit {
+  width: 100%;
+  background: var(--color-primary);
+  border: none;
+  height: 52px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.comment-btn-box {
+  padding: 0px 10px !important;
+}
+.comment-submit:hover {
+  background: #ffc221;
+  color: #031f42;
+  transition: 0.3s;
+}
+.course-tab-container .video-box .course-detail button {
+  width: -webkit-fill-available;
+}
+.course-tab-container .video-box .course-detail button:hover {
+  background: var(--color-primary);
+  /* color: #031f42; */
+}
+.video-section {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: -188px;
+  background: var(--color-white);
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 5px 10px #918b8b;
+}
+.course-price {
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 20px;
+}
+.updated-price .MuiBadge-badge {
+  background-color: var(--color-secondary);
+
+  position: relative;
+  right: 42px;
+}
+.btn-review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.email-error {
+  position: absolute;
+  color: var(--color-secondary) !important;
+}
+@media screen and (min-width: 1024px) {
+  .tab-course-description {
+    width: 60%;
+  }
+  .curriculum {
+    width: 60%;
+  }
+}

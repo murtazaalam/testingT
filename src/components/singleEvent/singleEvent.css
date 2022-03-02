@@ -1,0 +1,17 @@
+.event-box{
+    padding: 0px 18px;
+}
+@media screen and (min-width: 768px){
+    .event-box{
+        padding: 0px 46px;
+    }
+}
+@media screen and (min-width: 900px){
+    .event-form{
+        position: relative;
+        bottom: 120px;
+    }
+    .event-box{
+        padding: 0px 54px;
+    }
+}

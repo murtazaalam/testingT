@@ -1,0 +1,13 @@
+.right-panel-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.input-margin {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+.css-1nrlq1o-MuiFormControl-root {
+  margin: none;
+}
+

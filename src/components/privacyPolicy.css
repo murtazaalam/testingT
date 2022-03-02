@@ -1,0 +1,12 @@
+.policy-container {
+  padding: 106px 155px;
+}
+.policy-container .content {
+  padding: 80px 0px;
+}
+
+@media only screen and (max-width: 700px) {
+  .policy-container {
+    padding: 50px 10px;
+  }
+}

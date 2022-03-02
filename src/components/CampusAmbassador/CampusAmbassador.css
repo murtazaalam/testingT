@@ -1,0 +1,78 @@
+@import url("http://fonts.cdnfonts.com/css/segoe-ui-4");
+.background {
+  background: #f4f6f9;
+  padding: 18px;
+}
+
+.techvanto-campus-ambassador {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
+}
+.techvanto-campus-ambassador-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.campus-btn {
+  border-radius: 21px;
+  padding: 5px 30px 5px 30px;
+}
+@media screen and (min-width: 620px) {
+  .techvanto-video {
+    width: 400px;
+    height: 270px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .techvanto-video {
+    width: 400px;
+    height: 270px;
+    flex-direction: row !important;
+  }
+}
+.techvanto-campus-ambassador-left-image-upper {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.techvanto-campus-ambassador-left-icon {
+  color: var(--color-white);
+  font-size: 50px !important;
+}
+.techvanto-campus-ambassador-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.techvanto-campus-ambassador-right-content {
+  display: block;
+  text-align: left !important;
+}
+.techvanto-know-more-button button {
+  color: white;
+}
+.techvanto-know-more-button:hover {
+  transition: 2s;
+  background-color: var(--color-primary) !important;
+}
+@media only screen and (max-width: 1050px) {
+  .techvanto-campus-ambassador {
+    grid-template-columns: 1fr !important;
+    width: 70% !important;
+    margin: 0 auto !important;
+  }
+
+  .techvanto-campus-ambassador-right-content {
+    text-align: center !important;
+  }
+}

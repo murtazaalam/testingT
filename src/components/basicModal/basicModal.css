@@ -1,0 +1,17 @@
+.techvanto-modal-btn {
+    padding: 14px;
+    background: var(--color-primary);
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    color: var(--color-white);
+}
+.techvanto-modal-btn:hover {
+    background: var(--color-secondary);
+}
+.btn-demo{
+    padding: 10px 42px;
+}
+.btn-demo:hover{
+    color: #fff;
+}

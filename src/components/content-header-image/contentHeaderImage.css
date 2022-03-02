@@ -1,0 +1,64 @@
+.techvanto-content-header-image {
+  min-height: 70vh !important;
+  background-size: auto 100% !important;
+  background-position: right !important;
+}
+.techvanto-content-header-image div:nth-child(1) {
+  max-width: 1894px !important;
+}
+.techvanto-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 60vh;
+  text-align: left;
+  margin: 50px 50px 50px 32px;
+}
+.header-text{
+  padding-top: 120px;
+}
+.btn-grad .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  color: white;
+}
+.techvanto-campus-ambassador-right-content { 
+  text-align: center !important;
+}
+.large-text {
+  font-size: 26px;
+  font-variant: petite-caps;
+  font-weight: bold;
+}
+.small-text {
+  font-size: 14px;
+}
+@media screen and (min-width: 400px){
+  .large-text{
+    font-size: 40px;
+  }
+  .small-text {
+    font-size: 21px;
+  }
+}
+@media screen and (min-width: 768px){
+  .large-text{
+    font-size: 48px;
+  }
+  .techvanto-content-header-image {
+    min-height: 60vh !important;
+  }
+  .header-text{
+    padding-top: 24px;
+  }
+}
+@media screen and (min-width: 1024px){
+  .techvanto-content-header-image {
+    min-height: 70vh !important;
+  }
+  .techvanto-header-content{
+    justify-content: left;
+  }
+  .small-heading{
+    text-align: left;
+  }
+}

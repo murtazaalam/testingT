@@ -1,0 +1,82 @@
+.techvanto-book-a-demo {
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* 
+  .techvanto-book-a-demo img{
+      width: 350px;
+  } */
+.book-demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96%;
+}
+.form-book .MuiCardActions-spacing{
+  justify-content: center;
+}
+.query-message {
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+}
+.techvanto-book-a-demo > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 102%;
+}
+
+.techvanto-book-a-demo > p {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.techvanto-demo-right-content {
+  display: block;
+  text-align: center;
+}
+
+.techvanto-book {
+  display: flex;
+}
+
+.padding {
+  padding: 6px;
+}
+.inhert-width {
+  width: inherit;
+}
+
+.techvanto-book input,
+.techvanto-book {
+  background-color: white;
+  border-radius: 99px;
+}
+.form-book {
+  display: flex;
+  flex-direction: column;
+  width: -webkit-fill-available;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 400px){
+  .book-demo {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .techvanto-book-a-demo {
+    justify-content: stretch !important;
+    height: auto !important;
+  }
+  .fr2 {
+    grid-template-columns: none;
+  }
+}

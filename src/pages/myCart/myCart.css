@@ -1,0 +1,87 @@
+input {
+  padding-left: 10px;
+}
+.cart-content-block {
+  margin-top: 40px;
+}
+.cart-action {
+  display: flex;
+  flex-direction: column;
+  place-content: space-between;
+  white-space: pre;
+}
+.cart-form {
+  display: flex;
+}
+.cart-priceCard {
+  width: 321px;
+}
+.table-wrap {
+  width: 72%;
+}
+.apply-coupon,
+.remove-coupon {
+  width: 120px;
+  font-size: smaller;
+}
+
+.apply-coupon:hover {
+  background-color: #a862dd;
+  border-color: #a862dd;
+  color: white;
+}
+
+.remove-coupon:hover {
+  background-color: #d9534f;
+  border-color: #d9534f;
+  color: white;
+}
+
+.green {
+  font-size: smaller;
+  color: green;
+}
+
+.remove-coupon1 {
+  font-size: smaller;
+  width: 120px;
+}
+.remove-coupon1:hover {
+  background-color: #d9534f;
+  border-color: #d9534f;
+  color: white;
+}
+.table-wrap .css-1qaznj3-MuiCardContent-root {
+  width: 424px;
+}
+@media screen and (min-width: 768px){
+  .cart-form {
+    flex-direction: row !important;
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .cart-form {
+    flex-direction: column;
+  }
+  .cart-left-card {
+    width: max-content;
+    flex-direction: column;
+    width: 321px;
+  }
+}
+@media screen and (min-width: 1024px){
+  .cart-form .css-15d9d1s-MuiPaper-root-MuiCard-root{
+    flex-direction: column;
+    width: 54%;
+  }
+}
+@media screen and (min-width: 1280px){
+  .cart-form .css-15d9d1s-MuiPaper-root-MuiCard-root{
+    flex-direction: row;
+    width: 100%;
+  }
+  .cart-form .table-wrap{
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,102 @@
+.my-container {
+  position: relative;
+}
+.page-heading {
+  margin-top: 104px;
+  padding: 15px 0 60px 0;
+  background-position: center;
+  background: url("../../../assets/images/course_background_demo_image.jpg");
+}
+.page-heading h1 {
+  text-align: center;
+  font-weight: 600;
+  margin: 40px 0;
+}
+.page-heading ol a {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-white);
+  font-weight: 600;
+  transition: 0.3s;
+}
+.page-heading ol li.active {
+  color: var(--color-white);
+}
+.page-heading ol a:hover {
+  color: #252525;
+}
+.page-heading ol a .line {
+  position: absolute;
+  height: 2px;
+  width: 0px;
+  left: 0;
+  background: #252525;
+  transition: width 0.3s;
+}
+.page-heading ol a:hover .line {
+  width: 100%;
+}
+.page-heading ol li {
+  font-size: 14px;
+}
+.course-container {
+  padding: 38px 54px;
+}
+@media (max-width: 700px) {
+  .course-container {
+    padding: 26px 17px;
+  }
+}
+.course-container .course-head h2 {
+  color: var(--color-white);
+}
+.course-head h2 {
+  margin-top: 50px;
+}
+.other {
+  display: flex;
+  justify-content: space-between;
+}
+.course-detail {
+  background: #f8f9f8;
+  padding: 10px;
+}
+.other p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.other .heading {
+  font-weight: 600;
+  margin-top: 4px;
+  font-size: 18px;
+}
+.other p .icon {
+  margin-right: 4px;
+}
+.updated-price .MuiBadge-badge {
+  top: -3px;
+  padding: 10px 10px;
+}
+.share-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 14px;
+  transition: 0.3s;
+  color: var(--color-primary);
+}
+.share-now .share-text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.share-now:hover {
+  color: var(--color-secondary);
+}
+@media screen and (min-width: 1025px) {
+  .page-heading {
+    margin-top: 133px;
+  }
+}

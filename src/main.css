@@ -1,0 +1,152 @@
+html {
+  --color-primary: #1c477c;
+  --color-secondary: #ea395d;
+  --color-primary-text: #373737;
+  --color-secondary-text: #8c9095;
+  --color-heading: #d82a4f;
+  --color-background: #eef4f6;
+  --color-border: grey;
+  --gutter: 16px;
+  --stories-slider-height: 600px;
+  --color-footer: #4078af;
+  --color-footer-bottom: #cf5982;
+  --color-white: white;
+  --color-black: #000;
+  --color-light-pink: #fbaed2;
+  --color-green-icon: green;
+  --color-red-icon: red;
+  --color-disable: #ddd5d5;
+  --color-secondary-header: #578bc0;
+  /* --bg-image: url(./Assets/Images/bg.jpg); */
+  --color--bg-navbar: white;
+  /* --color-navbar-text: #333; */
+  --color-navbar-text: black;
+  --border-color: #a4508b;
+  scroll-behavior: smooth;
+}
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Nunito", sans-serif !important;
+  /* font-family: "Roboto Serif", sans-serif; */
+}
+.primary-background {
+  background-color: var(--color-primary);
+}
+.secondary-background {
+  background-color: var(--color-secondary);
+}
+.full-width {
+  width: -webkit-fill-available;
+}
+.btn-grad {
+  background-color: var(--color-secondary);
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  /* padding: 10px; */
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  height: 56px;
+  text-transform: capitalize;
+  padding: 10px 16px;
+  /* width: -webkit-fill-available; */
+}
+.btn-background-blue {
+  background-color: var(--color-primary);
+}
+
+.techvanto-whyus {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.techvanto-whyus-heading {
+  margin: 25px !important;
+  font-size: 2rem !important;
+  font-weight: 800 !important;
+}
+
+@media only screen and (max-width: 865px) {
+  .techvanto-whyus-heading {
+    font-size: 1.3rem !important;
+  }
+}
+
+.techvanto-whyus-grid-item {
+  height: 200px;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+.techvanto-whyus-grid {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.techvanto-whyus-cloudupload-icon {
+  font-size: 30px !important;
+}
+
+.techvanto-whyus-grid-item-count {
+  font-size: 40px;
+  color: var(--color-primary);
+}
+
+.section-spacing {
+  margin: 20px 17% 20px 17%;
+}
+@media (max-width: 700px) {
+  .section-spacing {
+    margin: 0;
+  }
+}
+.display-grid {
+  display: grid;
+}
+.fr4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+}
+.fr5 {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.fr2 {
+  grid-template-columns: 2fr 2fr;
+}
+.text-extra-small {
+  font-size: 10px;
+}
+.text-large {
+  font-size: 32px;
+}
+.background {
+  background: var(--color-background);
+  padding: 18px;
+}
+.btn-inner-alignment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1000px) {
+  .fr4 {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 30px;
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .fr4 {
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,110 @@
+.event-heading {
+  color: var(--color-white);
+  text-align: left !important;
+}
+.event-aria {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.event-aria h3 {
+  font-weight: 600;
+  font-size: 2.5em;
+}
+@media (max-width: 700px) {
+  .event-aria h3 {
+    font-size: 1.5em;
+  }
+}
+.event-card-box {
+  display: inline-block;
+  margin: 10px 6px;
+  width: 100%;
+}
+.courses-area {
+  padding: 50px 52px 8px;
+}
+@media (max-width: 700px) {
+  .courses-area {
+    padding: 10px 21px 0 11px;
+  }
+}
+
+.event-card {
+  background: linear-gradient(120deg, #1a7154 0%, #44aa65 50%, #44aa65 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.event-card-box .css-1t6e9jv-MuiCardActions-root {
+  padding-left: 0;
+  padding-right: 0;
+}
+.event-card-box h6 {
+  width: 100%;
+  text-align: center;
+  padding: 8px 0;
+  font-weight: 600;
+}
+.event-card-box .css-fa9wvr-MuiCardActions-root {
+  padding: 0;
+}
+.event-details {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 22px 10px 0 10px;
+}
+.event-details .event-date {
+  font-weight: 600;
+}
+.event-menu h6 {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 12px 0px;
+}
+.event-menu h6:hover {
+  font-weight: 800;
+}
+.view-text {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  margin-right: 8px !important;
+}
+.active-view {
+  border: 1px solid;
+  border-radius: 3px;
+}
+.event-body {
+  flex-direction: column;
+}
+.btn-design{
+  text-decoration: underline !important;
+  font-weight: 800 !important;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.active-event-menu {
+  font-weight: 800;
+}
+.inactive-event-menu {
+  font-weight: 600;
+}
+.event-btn {
+  color: var(--color-white) !important;
+  padding: 4px 8px !important;
+  font-weight: 600 !important;
+}
+@media screen and (min-width: 576px) {
+  .event-body {
+    flex-direction: row;
+  }
+  .event-card-box {
+    width: 250px;
+  }
+}

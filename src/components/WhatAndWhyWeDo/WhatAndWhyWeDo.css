@@ -1,0 +1,41 @@
+.techvanto-grid-column {
+  border-right: black solid 1.5px;
+}
+
+.whatwedoWhywedotabs {
+  display: flex;
+  place-content: space-around;
+}
+
+.techvanto-what-why-item ul {
+  list-style: none;
+  max-width: 600px;
+}
+
+.techvanto-what-why-item svg {
+  color: var(--color-green-icon);
+  display: block;
+  position: absolute;
+}
+
+.techvnato-what-and-why-list .MuiAvatar-colorDefault {
+  background-color: white;
+}
+
+.techvanto-why-we-do {
+  display: flex;
+  justify-content: center;
+  border-left: black solid 1.5px;
+}
+
+.techvanto-why-we-do li.MuiListItem-gutters,
+.techvanto-why-we-do li.MuiListItem-gutters div {
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .display-on-small-screen {
+    display: flex;
+    flex-direction: column;
+  }
+}

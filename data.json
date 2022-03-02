@@ -1,0 +1,382 @@
+
+[
+    {
+        "course_name": "Artificial Intelligence",
+        "subtitle": "Upskill your career in AI and break into deep learning fundamentals in this comprehensive guide.",
+        "description": "The process of aiding machines to experience modifications in their working behaviours while responding to external inputs to behave like human beings holds immense potential in the coming years. With higher automation and sophistication, tech giants such as Google, Microsoft, Amazon and Apple are heavily investing in AI-driven products to facilitate the market's demands. AI is the future. So why should you lag behind? Transform your budding interest in this lucrative field into an illustrious career with Techvanto Academy's unique offering.",
+        "learningObjective": [
+            "Build deep neural networks, make machine predictions and implement lemmatization.",
+            "Discover the relationship between reinforcement learning and psychology.",
+            "Understand strategies for image processing in ML systems.",
+            "Apply gradient-based supervised machine learning methods to reinforcement learning",
+            "Use Popen and os library to extract system information."
+        ],
+        "preRequisites": [
+            "Prior basic-level knowledge of Python.",
+            "A laptop or desktop with basic installations and features."
+        ],
+        "Training Benefits": [
+            "ISO-Certified Certificate of Excellence from IIT Bhubaneswar",
+            " Live, on-demand classes",
+            "30 days of interactive learning",
+            " Career support (internships+placement+aptitude and skill-based training+networking and resume building) after course completion",
+            "Hands-on projects to practice your skills"
+        ],
+        "avgRating": 3.5,
+        "category": "For College",
+        "noOfReviews": 45,
+        "price": 7900,
+        "discount": 3000,
+        "discount_limit_hour": 4,
+        "duration": "4 Weeks",
+        "noOfLectures": 8,
+        "accessMode": "lifetime",
+        "noOfEnrollment": 52,
+        "thumbnail": "url",
+        "gradient": "",
+        "headerImageUrl": "anyurl",
+        "posterImageUrl": "anyurl",
+        "curriculum": [
+            {
+                "heading": "Introduction to Artificial Intelligence",
+                "detail": [
+                    "The Rise of Artificial Intelligence",
+                    "Artificial Intelligence",
+                    " Introduction to Artificial Intelligence (AI)",
+                    "History of AI",
+                    " Importance and other Philosophies about AI",
+                    "General Approaches and Goals of AI",
+                    "Components of AI",
+                    "Working Domains/Companies/Products in Current Market",
+                    "Programming Languages Used for AI",
+                    "Python Programming"
+                ]
+            },
+            {
+                "heading": "PYTHON PROGRAMMING",
+                "detail": [
+                    "Basic Of Python And Why Python For Machine Learning",
+                    "Installation Of Software On Different Os",
+                    "Understanding Basic Syntax With Data Types",
+                    "List, Dict, Tuple, String",
+                    "Extracting Data From A File",
+                    "Committing Your Code To Github"
+                ]
+            },
+            {
+                "heading": "PROJECTS",
+                "detail": [
+                    "Write a python program to check if a string contains all unique characters"
+                ]
+            },
+            {
+                "heading": "More about python programming",
+                "detail": [
+                    "Conditional Statement And Loop",
+                    "Function And Modules",
+                    "File Handling",
+                    "Creating Own Modules / Library",
+                    "Web Scraping With Urllib2",
+                    "Grabbing System Information From Popen And Os Library",
+                    "Scanning Network Ip & Mac Address With Loops"
+                ]
+            },
+            {
+                "heading": "Libraries Used",
+                "detail": [
+                    "Introduction to NumPy & Matplotlib",
+                    "Managing Array With Numpy",
+                    "Multidimensional Array With Numpy",
+                    "Unit Matrix Handling & Creating",
+                    "Deleting Indexes From Matrix",
+                    "Deep Dive With Matplotlib",
+                    "Drawing General Purpose Graphs",
+                    "Graphs With Mathematics"
+                ]
+            },
+            {
+                "heading": "Linear Regression",
+                "detail": [
+                    "Using House Price Prediction",
+                    "Simple Linear Regression",
+                    "Polynomial Linear Regression",
+                    "Cost Function of Linear Regression",
+                    "Understanding Logistic Regression",
+                    "Understanding linear regression using matrix"
+                ]
+            },
+            {
+                "heading": "NEURAL NETWORK ANALYSIS",
+                "detail": [
+                    " Introduction to Neural Network",
+                    " Understanding neural networks",
+                    " What is Deep Learning?",
+                    " Data learning and machine predictions",
+                    " Neural networks real understanding",
+                    " Neural network implementation with real datasets",
+                    "Project: Case Study :Character recognition"
+                ]
+            },
+            {
+                "heading": "Natural Language Processing ",
+                "detail": [
+                    "Tokenizing text data",
+                    "Converting words to their base forms using stemming",
+                    "Converting words to their base forms using lemmatization",
+                    "Parts of Speech tagging",
+                    "Dividing text data into chunks",
+                    "Extracting the frequency of terms using a Bag of Words model",
+                    "Term frequency and Inverse Document Frequency",
+                    "Building a category predictor"
+                ]
+            },
+            {
+                "heading": "IMAGE PROCESSING WITH ML",
+                "detail": [
+                    "Introduction to Image Processing",
+                    " How image search is going to work",
+                    " Loading and Registering Image",
+                    " Taking pictures with python for image processing",
+                    " Loading and registering images",
+                    " Edge Detection",
+                    " Face/Object detection"
+                ]
+            },
+            {
+                "heading": "Project",
+                "detail": [
+                    "Face Detection / Recognition and Automation",
+                    "Jarvis",
+                    "Ecommerce Product Recommendation"
+                ]
+            }
+        ],
+        "isTopCourse": 1,
+        "createdAt": "1/1/22"
+    },
+    {
+        "course_name": "Cyber security",
+        "subtitle": "Upskill your career in AI and break into deep learning fundamentals in this comprehensive guide.",
+        "description": "In today's tech savvy world, no industry is bereft from the impact of information and system protection technology. This has also stressed the need for qualified and capable professionals who can not only handle the latest means of cyber-protection but also adapt to its evolving technical aspects. This cybersecurity training course will get you thorough with networking and computer systems and concepts like cloud security and identity management.",
+        "learningObjective": [
+            "Acquire an advanced, practical skill set in information security attack detection and prevention.",
+            "Summarise the basics of the cybersecurity assessment and analysis process.",
+            "Master the use of cybersecurity tools, programs and procedures.",
+            "Get updated with contemporary law and policies surrounding the cybersecurity regime.",
+            "Explain concepts like identity management, disaster recovery/business continuity planning and endpoint security."
+        ],
+        "preRequisites": [
+            "Acquaintance with the fundamental knowledge of computer networking.",
+            "A laptop or desktop with basic installations and features."
+        ],
+        "Training Benefits": [
+            "ISO-Certified Certificate of Excellence from IIT Bhubaneswar",
+            " Live, on-demand classes",
+            "30 days of interactive learning",
+            " Career support (internships+placement+aptitude and skill-based training+networking and resume building) after course completion",
+            "Hands-on projects to practice your skills"
+        ],
+        "avgRating": 3.5,
+        "category": "For College",
+        "noOfReviews": 45,
+        "price": 7900,
+        "discount": 2400,
+        "discount_limit_hour": 4,
+        "duration": "4 Weeks",
+        "noOfLectures": 8,
+        "accessMode": "lifetime",
+        "noOfEnrollment": 52,
+        "thumbnail": "url",
+        "gradient": "",
+        "headerImageUrl": "anyurl",
+        "posterImageUrl": "anyurl",
+        "curriculum": [
+            {
+                "heading": "GETTING COMFORTABLE WITH LINUX",
+                "detail": [
+                    "Introduction To Linux",
+                    "Getting Started With Linux Terminal",
+                    "Kali Linux Root, Root And Root",
+                    "Basics Of Commands",
+                    "Linux Filters",
+                    "Working With Directories",
+                    "Working With Files ",
+                    "Introduction To User Management",
+                    "Understanding Permissions In Depth",
+                    "Using Regular Expressions With Grep",
+                    "Controlling Services And Daemons",
+                    "BASH scripting"
+                ]
+            },
+            {
+                "heading": "HANDS ON NETWORKS & SECURITY",
+                "detail": [
+                    "OSI and TCP/IP models",
+                    "TCP and UDP protocols",
+                    "Network Topologies",
+                    "IPv4 Addressing And Subnettin",
+                    "IPv6 Addressing 'VLANs' Routing Information Protocol (RIP)",
+                    "Understanding of (CVSS)",
+                    "Network Security Solutions",
+                    "Firewall",
+                    "ACL",
+                    "IDS",
+                    "IPS",
+                    "DMZ",
+                    "VPN",
+                    "Switches",
+                    "Routers",
+                    "MITM",
+                    "Sniffing"
+                ]
+            },
+            {
+                "heading": "UNDERSTAND THE ART OF CRYPTOGRAPHY",
+                "detail": [
+                    "Introduction to Cryptography",
+                    "Basic Concepts in Cryptography",
+                    "Introduction to Cipher Security",
+                    "Substitution Ciphers",
+                    "Transposition Ciphers",
+                    "Hash Function",
+                    "Public Key Cryptography",
+                    "Digital Certificate"
+                ]
+            },
+            {
+                "heading": "WEB APPLICATION SECURITY",
+                "detail": [
+                    "Web Fundamentals",
+                    "Owasp TOP 10-2017",
+                    "A1 - Injection",
+                    "A2 - Broken Authentication",
+                    "A3 - Sensitive Data Exposure",
+                    "A4 - XML External Entities (XXE)",
+                    "A5 - Broken Access Control",
+                    "A6 - Security Misconfiguration",
+                    "A7 - Cross-Site Scripting (XSS)",
+                    "A8 - Insecure Deserialization",
+                    "A9 - Using Components with Known Vulnerabilities",
+                    "A10 - Insouciant Logging & Monitoring",
+                    "Authentication Bypass",
+                    "Insecure OTP Implementation",
+                    "Lack of Bruteforce Prevention",
+                    "Cross-Site Request Forgery",
+                    "Horizontal Privilege Escalation",
+                    "Vertical Privilege Escalation",
+                    "Clickjacking",
+                    "Component with Known Vulnerabilities Used",
+                    "Directory Indexing",
+                    "Information Disclosure through Default Error Pages",
+                    "Information Leakage through Response Headers",
+                    "Insecure Configuration",
+                    "Insecure CORS Misconfiguration",
+                    "Missing HTTP Strict Transport Security",
+                    "Missing Secure HTTP Response Headers",
+                    "Missing SPF",
+                    "Dangerous HTTP Methods Enabled",
+                    "Server-Side Includes Injection",
+                    "Denial of Service",
+                    "Insecure Credential Transmission",
+                    "Sensitive Information Transmission in URL",
+                    "Command Injection",
+                    "DOM based Cross-Site Scripting",
+                    "File Path Traversal",
+                    "Header Injection",
+                    "HTML Injection",
+                    "HTTP Parameter Pollution",
+                    "Improper Server Side Validation",
+                    "Insecure Deserialization",
+                    "Lack of Request Limiters",
+                    "Local File Inclusion",
+                    "Open Redirection",
+                    "Persistent Cross-Site Scripting",
+                    "Price Tampering",
+                    "Reflected Cross-Site Scripting",
+                    "Remote File Inclusion",
+                    "Server Side Request Forgery",
+                    "Server Side Template Injection",
+                    "SQL Injection",
+                    "Unvalidated File Upload",
+                    "XPath Injection",
+                    "XML External Entity",
+                    "Information Disclosure through Response Body",
+                    "Information Disclosure through Stack Traces",
+                    "Username/Email Enumeration",
+                    "Weak Password Policies",
+                    "Insecure Session Management",
+                    "Session Puzzling Attack",
+                    "Subdomain Takeover",
+                    "Web Server Cache Poisoning",
+                    "Web Cache Deception",
+                    "Persistent HTML Injection",
+                    "Improper Error/Exception Handling",
+                    "Insufficient Session Expiration",
+                    "Long Password DOS Attack",
+                    "Wordpress Security"
+                ]
+            },
+            {
+                "heading": "ANDROID APPLICATION SECURITY",
+                "detail": [
+                    "Basic of Android",
+                    "Android Application components",
+                    "Android Activity Lifecycle",
+                    "Application Security Model",
+                    "Application Sandboxing",
+                    "Android Manifest File",
+                    "Android Permission Model",
+                    "Secure IPC",
+                    "Android Keystore Application Signing",
+                    " OWASP Mobile Top 10",
+                    " M1: Improper Platform Usage",
+                    " M2: Insecure Data Storage",
+                    " M3: Insecure Communication",
+                    " M4: Insecure Authentication",
+                    " M5: Insouciant Cryptography",
+                    " M6: Insecure Authorization",
+                    " M7: Poor Code Quality",
+                    " M8: Code Tampering",
+                    " M9: Reverse Engineering",
+                    " M10: Extraneous Functionality",
+                    " Android Static Analysis",
+                    " Types of Security Analysis",
+                    " SAST vs DAST",
+                    " Apk tool (Decompiling and Recompiling an Application)",
+                    " Jadx",
+                    " Self-signing an Application (Jar Signer)",
+                    " MOBSF",
+                    " DROZER",
+                    " Dynamic Analysis",
+                    " Root Detection",
+                    " Frida"
+                ]
+            },
+            {
+                "heading": "METASPLOIT",
+                "detail": [
+                    "Need For Metasploit",
+                    "Exploitation Basics",
+                    "Getting Started With Metasploit",
+                    "Metasploit Modules",
+                    "Meterpreter Basics",
+                    "Post Exploitation"
+                ]
+            },
+            {
+                "heading": "CAPTURE THE FLAG",
+                "detail": [
+                    "HackTheBox",
+                    "Vulnhub",
+                    "PicoCTF",
+                    "Over The Wire",
+                    "TryHackME",
+                    "PentesterLab",
+                    "Owasp Juice Shop"
+                ]
+            }
+        ],
+        "isTopCourse": 1,
+        "createdAt": "1/1/22"
+    }
+]

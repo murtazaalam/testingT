@@ -1,0 +1,41 @@
+.techvanto-student-says-heading-text {
+  text-align: center;
+}
+.techvanto-student-says {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/* .techvanto-student-says .alice-carousel__wrapper{
+}
+
+.techvanto-student-says-carousel{
+} */
+.left-arrow-studentSays {
+  width: 30px;
+  height: 30px;
+  background: var(--color-secondary);
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 2px 4px rgba(0, 0, 0, 0.1);
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  padding: 0px 4px 4px 0px;
+}
+.alice-carousel__prev-btn {
+  text-align: -webkit-right;
+}
+.right-arrow-studentSays {
+  width: 30px;
+  height: 30px;
+  background: var(--color-secondary);
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 2px 4px rgba(0, 0, 0, 0.1);
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  padding: 0px 0px 4px 4px;
+}
+.left-arrow-studentSays:hover,
+.right-arrow-studentSays:hover {
+  cursor: pointer;
+}

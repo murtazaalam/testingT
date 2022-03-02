@@ -1,0 +1,333 @@
+.main-logo {
+  padding: 10px 24px;
+  width: min-content;
+}
+.color-white {
+  color: var(--color-white) !important;
+}
+
+.color-black {
+  color: var(--color-white);
+}
+.navbar-background {
+  background-color: var(--color-primary) !important;
+}
+.bg-royal-transparent {
+  background-color: var(--color-secondary-header) !important;
+  transition: 1s;
+  box-shadow: none !important;
+}
+.secondary-navbar {
+  max-width: 1894px !important;
+  display: flex !important;
+  flex-direction: row-reverse;
+  justify-content: center;
+  background-color: var(--color-primary);
+}
+.secondary-navbar .main-logo{
+  padding-left: 10px;
+  position: relative;
+}
+.logo-image{
+  width: 122px;
+  left: -126px;
+  top: -2px;
+  position: relative;
+}
+.secondary-navbar .menu-icon {
+  position: absolute;
+  left: -28px;
+}
+.menu-item {
+  display: flex;
+}
+.item {
+  text-align: end;
+  text-align-last: center;
+}
+.menu-item .item {
+  margin-right: 30px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.user-aria {
+  display: none;
+}
+.dropdown-content-contact {
+  display: none;
+  position: absolute;
+  background-color: #f7f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  right: 0;
+  border-radius: 2%;
+}
+.dropdown-content-contact a {
+  padding: 12px;
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content-contact a:hover {
+  background: #b3d3f3;
+}
+
+.dropdown:hover .dropdown-content-contact {
+  display: block;
+}
+.menu-text {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menu-text:hover .arrow-icon {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+.dropdown-content {
+  position: absolute;
+  display: none;
+  left: 0;
+  width: 835px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  box-shadow: 0px 10px 14px grey;
+}
+.courses:hover .dropdown-content {
+  display: block;
+}
+.menu-icon {
+  display: block !important;
+  padding-left: 12px !important;
+}
+.techvanto-navbar-service-accordian {
+  width: 100% !important;
+}
+.header-dropdown {
+  background: #fff;
+  height: 100%;
+  width: 150px;
+  border-right: 1px solid var(--color-border);
+  position: relative;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.triangle {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  top: -7px;
+  left: 50%;
+  transform: rotate(45deg);
+}
+.course-category {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.category-heading span {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.course-sub-category {
+  width: 100%;
+}
+.sub-category-list .css-333i13-MuiListItemText-root {
+  padding: 4px 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.sub-category-list .css-333i13-MuiListItemText-root:hover {
+  background-color: var(--color-background);
+  border-right: 1px solid var(--color-primary);
+}
+.sub-category-list .css-333i13-MuiListItemText-root:hover span {
+  font-weight: 600;
+}
+.description {
+  position: absolute;
+  top: -34px;
+  left: 158px;
+  width: 250px;
+}
+.dropdown-menu-multi-level {
+  display: block;
+  border: medium none;
+  text-align-last: start;
+  box-shadow: none;
+  border-right: 1px solid #d7d7d7;
+  background: linear-gradient(to right, #f1f1f1, #f4f4f4);
+  padding: 10px 0;
+  width: 280px;
+  top: 0;
+  margin-bottom: 0;
+  height: 534px;
+  font-size: 14px;
+  list-style-type: none;
+  text-align: left;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.dropdown-menu-multi-level li a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  font-weight: 600;
+  padding: 7px 25px;
+  white-space: normal;
+  color: #333 !important;
+}
+.course-image:hover {
+  background: transparent !important;
+}
+.dropdown-menu-multi-level li a:hover {
+  background-color: #d9ddeb;
+}
+.dropdown-menu-multi-level li a:hover .course-list {
+  display: flex;
+}
+.course-list,
+.course-desc {
+  display: none;
+  position: absolute;
+  left: 280px;
+  border: medium none;
+  width: 280px;
+  background: linear-gradient(to right, #fafafa, #f7f7f7);
+  top: 0;
+  height: 534px;
+  box-shadow: none;
+  border-right: none;
+  list-style-type: none;
+  padding-left: 0;
+  color: black;
+}
+.course-list {
+  border-right: 1px solid #d7d7d7;
+}
+.school-course {
+  display: flex;
+}
+.default-desc {
+  display: block;
+}
+.sub-menu li a:hover {
+  color: #0c5397;
+  background: transparent;
+  font-weight: 600;
+}
+.image-section {
+  height: 400px;
+  width: 144px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 8px;
+  background: linear-gradient(120deg, #1a7154 0%, #44aa65 50%, #44aa65 100%);
+}
+.image-section img {
+  width: 70px;
+  margin-top: 34px;
+}
+.course-desc {
+  margin: 0;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+.course-desc .desc-heading {
+  font-size: 18px;
+  font-weight: 600;
+}
+.school-course-list {
+  margin-top: 10px;
+}
+.school-course-list span {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.school-course-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+.school-course-list ul li {
+  margin: 8px 0;
+  font-weight: 400;
+}
+.school-course-list ul li:hover {
+  font-weight: 600;
+}
+.school-course-list ul li .desc {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding-left: 18px;
+}
+.school-course-list ul li:hover .desc {
+  display: block;
+}
+.MuiToolbar-gutters {
+  flex: auto;
+}
+.school-course-list ul li:first-child .desc {
+  display: block;
+}
+.btn-nav {
+  height: 44px;
+  text-transform: capitalize;
+  padding: 0 16px;
+}
+.sidebar-link {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+.navbar-category {
+  display: none !important;
+}
+@media screen and (min-width: 300px){
+  .secondary-navbar .menu-icon {
+    position: absolute;
+    left: -25px;
+  }
+}
+@media screen and (min-width: 768px){
+  
+  .secondary-navbar .menu-icon{
+    left: 0px;
+  }
+
+}
+@media screen and (min-width: 600px) {
+
+}
+@media screen and (min-width: 1025px) {
+}
+@media screen and (min-width: 1200px) {
+  .navbar-category {
+    display: block !important;
+  }
+  .user-aria {
+    display: block;
+  }
+  .menu-icon {
+    display: none !important;
+  }
+  .secondary-navbar {
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+  .secondary-navbar .menu-icon{
+    position: relative;
+    left: 0px;
+  }
+  .secondary-navbar .css-1t29gy6-MuiToolbar-root {
+    padding-left: 24px;
+  }
+}

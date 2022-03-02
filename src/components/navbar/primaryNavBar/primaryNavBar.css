@@ -1,0 +1,25 @@
+.primary-navbar {
+  display: flex;
+  justify-content: center;
+  padding: 18px;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  background-color: var(--color-secondary);
+}
+
+.hide-primary-navbar {
+  display: none;
+}
+.text-medium {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 540px) {
+  .primary-navbar {
+    font-size: 14px;
+  }
+  .text-medium {
+    font-size: 14px;
+  }
+}
