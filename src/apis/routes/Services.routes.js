@@ -18,6 +18,7 @@ const routes = {
   TopCourse: endpoint + "top-courses",
   AddReview: endpoint + "add-review",
   AddHiring : endpoint + "add-hiring",
-  AddPlacement : endpoint + "add-placement-opportunity"
+  AddPlacement : endpoint + "add-placement-opportunity",
+  AddEvent : endpoint + "event-registration",
 };
 export default routes;

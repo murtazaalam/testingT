@@ -27,7 +27,7 @@ const TestQuestion = () => {
         <>
           <Box
             component="section"
-            className="page-heading"
+            className="page-heading course-mobile-view"
             sx={{
               background: `#1C477C url(${
                 window.matchMedia("(max-width: 668px)").matches
@@ -131,8 +131,8 @@ const TestQuestion = () => {
                         </>
                       );
                     }
-                  }))
-                 : (
+                  })
+                ) : (
                   <>
                     <h1
                       style={{
@@ -145,6 +145,11 @@ const TestQuestion = () => {
                     </h1>
                   </>
                 )}
+                {/* <div className="pagination">
+                            <Stack spacing={2}>
+                                <Pagination count={5} color="success" />
+                            </Stack>
+                        </div> */}
               </div>
               }
               {!subject &&

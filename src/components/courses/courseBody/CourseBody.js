@@ -24,10 +24,11 @@ import "./courseBody.css";
 import Login from "../../Login/Login";
 import Paper from "@mui/material/Paper";
 import myOrdersApi from "../../../apis/api/MyOders";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { RWebShare } from "react-web-share";
 import ButtonLoader from "../../../assets/images/button_loader.gif";
 import addReviewApi from "../../../apis/api/AddReview";
+import { logoutAction } from "../../../redux/slices/auth.slices";
 
 function PaperComponent(props) {
   return (
@@ -52,6 +53,7 @@ const CourseBody = ({ course }) => {
   const [formError, setFormError] = useState(false);
   const [cartLoader, setCartLoader] = useState(false);
   const [error, setError] = useState();
+  let dispatch = useDispatch();
 
   let { admin, isLogin } = useSelector((state) => state.AuthReducer);
 
@@ -65,7 +67,6 @@ const CourseBody = ({ course }) => {
   const isBaught = () => {
     if (baughtCourses) {
       baughtCourses.forEach((item) => {
-        console.log(item.course_id, course._id);
         if (item.course_id === course._id) setIsBaughtCourse(true);
       });
     }
@@ -73,8 +74,21 @@ const CourseBody = ({ course }) => {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+  const now = new Date();
+  let futureDate;
+  let diffHour;
+  
 
-  const daysHoursMinSecs = { day: 2, hours: 0, minutes: 0, seconds: 30 };
+  if(course.discount_limit_date){
+    futureDate = new Date(course.discount_limit_date);
+    diffHour = Math.floor((futureDate - now)/3600000)
+    diffHour > 0 ? diffHour = diffHour : diffHour = 0;
+  }
+  else{
+    diffHour = 0;
+  }
+  
+  const daysHoursMinSecs = { day: 0, hours: diffHour, minutes: 0, seconds: 0 };
   const { day = 0, hours = 0, minutes = 0, seconds = 60 } = daysHoursMinSecs;
   const [[days, hrs, mins, secs], setTime] = useState([
     day,
@@ -104,7 +118,7 @@ const CourseBody = ({ course }) => {
   useEffect(() => {
     const timerId = setInterval(() => tick(), 1000);
     return () => clearInterval(timerId);
-  }, []);
+  });
 
   const addToCart = async (id) => {
     setCartLoader(true);
@@ -141,9 +155,18 @@ const CourseBody = ({ course }) => {
         progress: undefined,
       });
     else if (message === "Unauthorized") {
+      toast.error(message, {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
       setCartLoader(false);
+      dispatch(logoutAction());
       setOpen(true);
-      console.log(open);
     } else {
       toast.error(message, {
         position: "bottom-right",
@@ -253,17 +276,12 @@ const CourseBody = ({ course }) => {
                   </Typography>
 
                   {/* MAP Learning Objectives */}
-
-                  {course &&
-                    course.preRequisites?.map((data, index) => (
-                      <Typography
-                        component="p"
-                        className="tab-course-description"
-                        key={index}
-                      >
-                        {data}
-                      </Typography>
-                    ))}
+                  <ol className="desc-list-box">
+                    {course &&
+                      course.preRequisites?.map((data, index) => (
+                        <li className="tab-course-description" key={index}>{data}</li>
+                      ))}
+                  </ol>
 
                   {/* Prerequisites */}
                   <Typography sx={{ pt: "24px" }} component="h2">
@@ -271,16 +289,12 @@ const CourseBody = ({ course }) => {
                   </Typography>
 
                   {/* MAP Prerequisites  */}
-                  {course &&
-                    course.learningObjective?.map((data, index) => (
-                      <Typography
-                        component="p"
-                        className="tab-course-description"
-                        key={index}
-                      >
-                        {data}
-                      </Typography>
-                    ))}
+                  <ol className="desc-list-box">
+                    {course &&
+                      course.learningObjective?.map((data, index) => (
+                        <li className="tab-course-description" key={index}>{data}</li>
+                      ))}
+                  </ol>
 
                   {/* Training Benefits */}
                   <Typography sx={{ pt: "24px" }} component="h2">
@@ -288,16 +302,12 @@ const CourseBody = ({ course }) => {
                   </Typography>
 
                   {/* MAP Training Benefits */}
-                  {course &&
-                    course.training_benefits?.map((data, index) => (
-                      <Typography
-                        component="p"
-                        className="tab-course-description"
-                        key={index}
-                      >
-                        {data}
-                      </Typography>
-                    ))}
+                  <ol className="desc-list-box">
+                    {course &&
+                      course.training_benefits?.map((data, index) => (
+                        <li className="tab-course-description" key={index}>{data}</li>
+                      ))}
+                  </ol>
                 </div>
               </TabPanel>
               <TabPanel value="2">
@@ -385,13 +395,7 @@ const CourseBody = ({ course }) => {
                         {timeBadge === true ? (
                           <span className="updated-price">
                             <Badge
-                              badgeContent={` ${hrs
-                                .toString()
-                                .padStart(2, "0")}:${mins
-                                .toString()
-                                .padStart(2, "0")}:${secs
-                                .toString()
-                                .padStart(2, "0")}`}
+                              badgeContent={`${hrs.toString().padStart(2, "0")}:${mins.toString().padStart(2, "0")}:${secs.toString().padStart(2, "0")}`}
                               color="primary"
                             >
                               {course.price - course.discount}

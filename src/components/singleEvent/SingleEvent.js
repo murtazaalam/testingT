@@ -2,14 +2,15 @@ import * as React from "react";
 import { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import { makeStyles } from "@material-ui/core/styles";
-import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
 import { useParams } from "react-router-dom";
+import { toast } from "react-toastify";
 import "./singleEvent.css";
 import { Typography, Card } from "@mui/material";
-import { CheckCircle } from "@material-ui/icons";
 import singleEventApi from "../../apis/api/SingleEvent";
+import addEventApi from "../../apis/api/AddEvent";
+import ButtonLoader from "../../assets/images/button_loader.gif";
 import './singleEvent.css';
 
 const useStyles = makeStyles({
@@ -39,21 +40,78 @@ const useStyles = makeStyles({
 });
 const SingleEvent = () => {
   const classes = useStyles();
-  const [email, setEmail] = useState();
-  const [phoneNumber, setPhoneNumber] = useState();
-  const [name, setName] = useState();
-  const [checked, setChecked] = useState(true);
+  const [allError, setAllError] = useState();
   const [event, setEventData] = useState();
+  const [nameError, setNameError] = useState(false);
+  const [emailError, setEmailError] = useState(false);
+  const [phoneError, setPhoneError] = useState(false);
+  const [loader, setLoader] = useState(false);
   const params = useParams();
-  const handleChange = () => {
-    setChecked(!checked);
-  };
+
+  let emailValidate = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+  const [info, setInfo] = useState({
+    name: "",
+    email: "",
+    phone: "",
+  });
 
   useEffect(() => {
     if(!event){
       singleEventApi(params.id, setEventData);
     }
   },[]);
+
+  const formValidate = (event) => {
+    if (event.name === "name") {
+      setInfo({ ...info, name: event.value });
+      if(event.value == "") return setNameError(true);
+      setNameError(false);
+    }
+    if (event.name === "email") {
+      setInfo({ ...info, email: event.value });
+      if(event.value == "" || !event.value.match(emailValidate)) return setEmailError(true);
+      setEmailError(false);
+    }
+    if (event.name === "phone") {
+      setInfo({ ...info, phone: event.value });
+      if(event.value != "" && event.value.length === 10) return setPhoneError(false);
+      setPhoneError(true);
+    }
+    
+  }
+
+  const handleSubmit = async(event) => {
+    event.preventDefault();
+    setAllError("");
+    setLoader(true);
+    if(!info.name || !info.email || !info.phone ){
+      setAllError("Start fields are required.");
+      setLoader(false);
+      return;
+    }
+    else{
+      if(nameError === false && 
+        emailError === false && 
+        phoneError === false)
+      {
+        let res = await addEventApi(info, setLoader)
+        toast.success(res, {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      }
+      else{
+        setLoader(false);
+      }
+    }
+    
+  }
   return (
     <>
       <Box
@@ -97,54 +155,62 @@ const SingleEvent = () => {
           </Grid>
           <Grid item xs={12} sm={12} md={4} xl={4}>
             <Card sx={{ p: 2 }} className="event-form">
-              <Box component="form" noValidate sx={{ mt: 1 }}>
+              <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+                <p className="all-error">{allError}</p>
                 <TextField
                   margin="normal"
                   required
+                  error={nameError}
                   fullWidth
                   id="name"
                   label="Enter Name"
                   name="name"
                   autoComplete="name"
-                  value={name}
+                  helperText={nameError ? "Enter Your Name." : ""}
+                  value={info.name}
                   className={classes.root}
-                  onChange={(e) => setName(e.target.value)}
+                  onChange={(e) => formValidate(e.target)}
                   autoFocus
                 />
                 <TextField
                   margin="normal"
                   required
+                  error={emailError}
+                  helperText={emailError ? "Invalid Email." : ""}
                   fullWidth
                   id="email"
                   label="Email Address"
                   name="email"
                   autoComplete="email"
-                  value={email}
+                  value={info.email}
                   className={classes.root}
-                  onChange={(e) => setEmail(e.target.value)}
-                  autoFocus
+                  onChange={(e) => formValidate(e.target)}
                 />
 
                 <TextField
                   margin="normal"
                   required
+                  error={phoneError}
+                  helperText={phoneError ? "Invalid Phone Number." : ""}
                   fullWidth
                   name="phone"
                   label="phone"
-                  type="phone"
+                  type="number"
                   id="phone"
                   className={classes.root}
-                  value={phoneNumber}
-                  onChange={(e) => setPhoneNumber(e.target.value)}
+                  value={info.phone}
+                  onChange={(e) => formValidate(e.target)}
                   autoComplete="current-phoneNumber"
                 />
 
                 <button
                   type="submit"
-                  className="btn-grad full-width"
-                  style={{ marginTop: "10px" }}
+                  className="btn-grad full-width event-register"
+                  style={loader ? {backgroundColor: 'var(--color-disable)'} : {backgroundColor: 'var(--color-secondary)'}}
+                  disabled={loader ? true : false}
                 >
-                  Register Now
+                  {loader ? <img src={ButtonLoader} width="80" /> : 'Register Now'}
+                  
                 </button>
               </Box>
             </Card>

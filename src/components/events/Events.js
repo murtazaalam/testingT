@@ -2,7 +2,7 @@ import * as React from "react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
-import { Typography } from "@mui/material";
+import { CardMedia, Typography } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -10,6 +10,7 @@ import Button from "@mui/material/Button";
 import EventImage from "../../assets/images/event_icon_demo.svg";
 import eventsApi from "../../apis/api/GetEvents";
 import "./events.css";
+import Chip from "@mui/material/Chip";
 import Loading from "../Loader";
 
 const Events = (props) => {
@@ -41,7 +42,7 @@ const Events = (props) => {
     <>
       <Box
         component="section"
-        className="page-heading"
+        className="page-heading course-mobile-view"
         sx={{
           // background: `url(https://tv-academy-assets.s3.eu-west-2.amazonaws.com/Events.jpg)`,
           background: `#1C477C url(${
@@ -112,28 +113,29 @@ const Events = (props) => {
                   return (
                     <Link to={`/event/${event._id}`} key={event._id}>
                       <Card
-                        sx={{ minWidth: 175, minHeight: 320 }}
+                        sx={{ width: "auto", minHeight: 320 }}
                         className="event-card-box"
                         key={index}
                       >
-                        <CardContent
+                        <CardMedia
                           className="event-card"
-                          sx={{ height: 200 }}
-                        >
-                          <img src={EventImage} width="100" alt="" />
+                          image={EventImage}
+                          sx={{ objectFit: "scale-down", height: 200 }}
+                          component="img"
+                        ></CardMedia>
+                        <CardContent>
                           {/* for dynamic use below code */}
                           {/* <img src={`${event.image}`} width="100"/> */}
-                        </CardContent>
-                        <CardActions sx={{ flexDirection: "column" }}>
                           <Typography component="h6" className="event-name">
                             {event.name}
                           </Typography>
+                        </CardContent>
+                        <CardActions sx={{ flexDirection: "column" }}>
                           <Typography component="div" className="event-details">
-                            <Typography component="p" className="event-date">
-                              {event.date}
-                            </Typography>
-                            <Typography component="p">
-                              {event.category === "upcoming" && (
+                            <Chip label={event.date} />
+
+                            {event.category === "upcoming" && (
+                              <Typography component="p">
                                 <Link
                                   to={`/event/${event._id}`}
                                   style={{ textDecoration: "none" }}
@@ -146,10 +148,10 @@ const Events = (props) => {
                                     Register Now
                                   </Button>
                                 </Link>
-                              )}
-                            </Typography>
-                            <Typography component="p">
-                              {event.category === "past" && (
+                              </Typography>
+                            )}
+                            {event.category === "past" && (
+                              <Typography component="p">
                                 <Link
                                   to={`/event/${event._id}`}
                                   style={{ textDecoration: "none" }}
@@ -157,14 +159,13 @@ const Events = (props) => {
                                   <Button
                                     className="btn-grad btn-design"
                                     size="small"
-                                    size="small"
                                     sx={{ color: "#1c477c" }}
                                   >
                                     See Detail
                                   </Button>
                                 </Link>
-                              )}
-                            </Typography>
+                              </Typography>
+                            )}
                           </Typography>
                         </CardActions>
                       </Card>

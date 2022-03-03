@@ -51,7 +51,6 @@ function RightPanel({formType}) {
   const submitForm = async(e) => {
     e.preventDefault();
     setLoader(true);
-    console.log(">>", info);
     if(nameError === false && 
       emailError === false && 
       phoneError === false)

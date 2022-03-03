@@ -154,7 +154,7 @@ function AllCourses() {
     <>
       {/* Header */}
       <Box
-        className="page-heading"
+        className="page-heading course-mobile-view"
         sx={{
           background: `#1C477C url(${
           window.matchMedia("(max-width: 668px)").matches
@@ -190,7 +190,6 @@ function AllCourses() {
             {/* Side Panels */}
             {window.matchMedia("(max-width: 700px)").matches ? (
               <Accordion
-                expanded={expanded === "panel1"}
                 onChange={handleChange("panel1")}
               >
                 <AccordionSummary

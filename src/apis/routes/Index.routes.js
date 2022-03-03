@@ -1,3 +1,5 @@
-const endpoint = 'https://stagbk.techvantoacademy.com/'
-//18.206.58.123
+const endpoint = 'https://bk.techvantoacademy.com/'
+
 export default endpoint;
+//production url - https://bk.techvantoacademy.com/
+//stage url - https://stagbk.techvantoacademy.com/

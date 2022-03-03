@@ -3,7 +3,7 @@ import "./SearchBar.css";
 import SearchIcon from "@mui/icons-material/Search";
 
 const SearchBar = ({ value, changeInput }) => (
-  <div className="searchBar-wrap">
+  <div className="searchBar-wrap mobile-view-search">
     <SearchIcon className="searchBar-icon" />
     <input
       type="text"

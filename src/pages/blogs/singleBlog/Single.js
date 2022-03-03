@@ -17,9 +17,10 @@ export default function Single() {
     <div className="single">
       <Box
         component="section"
-        className="page-heading"
+        className="page-heading course-mobile-view"
         sx={{
-          background: `url(${blogItem && blogItem.blog_image})`,
+          background: ` #1C477C 0 0 no-repeat `,
+
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}

@@ -20,20 +20,19 @@ export default function CourseCard({
 }) {
   return (
     <Link to={`/courses/${id}`} style={{ textDecoration: "none" }}>
-      <Card sx={{ width: "340px" }} className="technovanto-course-card">
+      <Card className="technovanto-course-card mobile-view-course-card">
         <div
           style={{
-            background: `linear-gradient(${gradient})`,
-            height: "194px",
+            background: `linear-gradient(${gradient})`
           }}
+          className="card-grad"
         >
           <CardMedia
             component="div"
-            className="techvanto-all-course-image"
-            width="100%"
-            height="194"
-            style={{ backgroundImage: `url("${pic}")`, height: "194px" }}
-          />
+            className="techvanto-all-course-image course-image-box"
+          >
+            <img src={`${pic}`} className="course-pic" />
+          </CardMedia>
         </div>
         <CardContent
           style={{ borderBottom: "1px solid #d0d9df" }}

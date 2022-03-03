@@ -36,11 +36,9 @@ function Login({ open, handleClose, PaperComponent }) {
   const [value, setValue] = React.useState("1");
 
   const handleChange = (event, newValue) => {
-    console.log("helo");
     setValue(newValue);
   };
   const handleTabChange = () => {
-    console.log("helo000");
   }
 
   return (

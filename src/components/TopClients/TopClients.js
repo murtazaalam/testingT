@@ -55,7 +55,7 @@ const TopClient = (props) => {
           animationEasingFunction={"linear"}
           autoPlayInterval={0}
           infinite={true}
-          autoPlay={false}
+          autoPlay={true}
           controlsStrategy="alternate"
           mouseTracking
           items={images}

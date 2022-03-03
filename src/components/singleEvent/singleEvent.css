@@ -1,6 +1,17 @@
 .event-box{
     padding: 0px 18px;
 }
+.all-error{
+    text-align: center;
+    margin: 0;
+    color: var(--color-secondary);
+}
+.event-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
 @media screen and (min-width: 768px){
     .event-box{
         padding: 0px 46px;

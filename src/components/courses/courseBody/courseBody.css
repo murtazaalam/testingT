@@ -85,6 +85,9 @@
   justify-content: center;
   align-items: center;
 }
+.desc-list-box{
+  padding: 0 14px 0 29px; 
+}
 .curriculum .MuiAccordionSummary-content {
   margin: 24px 0;
 }

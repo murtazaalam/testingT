@@ -55,7 +55,7 @@
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  padding: 22px 10px 0 10px;
+  padding: 10px 10px 0 10px;
 }
 .event-details .event-date {
   font-weight: 600;
@@ -81,7 +81,7 @@
 .event-body {
   flex-direction: column;
 }
-.btn-design{
+.btn-design {
   text-decoration: underline !important;
   font-weight: 800 !important;
 }

@@ -1,22 +1,15 @@
 import { Link } from "react-router-dom";
 import "./sidebar.css";
 
-export default function Sidebar({sideBarDetail}) {
+export default function Sidebar({ sideBarDetail }) {
   return (
     <div className="sidebar">
       <div className="sidebarItem">
         <span className="sidebarTitle">ABOUT ME</span>
-        {sideBarDetail &&
-          <img
-            src={`${sideBarDetail.author_image}`}
-            alt=""
-          />
-        }
-        <p>
-          {sideBarDetail && sideBarDetail.author_detail}
-        </p>
+        {sideBarDetail && <img src={`${sideBarDetail.author_image}`} alt="" />}
+        <p>{sideBarDetail && sideBarDetail.author_detail}</p>
       </div>
-      <div className="sidebarItem">
+      {/* <div className="sidebarItem">
         <span className="sidebarTitle">CATEGORIES</span>
         <ul className="sidebarList">
           <li className="sidebarListItem">
@@ -50,7 +43,7 @@ export default function Sidebar({sideBarDetail}) {
             </Link>
           </li>
         </ul>
-      </div>
+      </div> */}
       {/* <div className="sidebarItem">
         <span className="sidebarTitle">FOLLOW US</span>
         <div className="sidebarSocial">

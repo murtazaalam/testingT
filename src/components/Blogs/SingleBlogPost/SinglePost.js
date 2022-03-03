@@ -25,7 +25,13 @@ export default function SinglePost({ blogDetails }) {
             <span>{blogDetails && blogDetails.posted_on}</span>
           </div>
           <p className="singlePostDesc">
-            {blogDetails && blogDetails.description}
+            {blogDetails &&
+              blogDetails.description.map((data) => (
+                <>
+                  <h3>{data.title}</h3>
+                  <p>{data.detail}</p>
+                </>
+              ))}
           </p>
         </div>
         <Sidebar sideBarDetail={blogDetails} />
