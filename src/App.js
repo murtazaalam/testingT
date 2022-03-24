@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter } from "react-router-dom";
 import MainRouters from "./routers/MainRouters";
 import { SecondaryNavBar } from "./components";
@@ -10,7 +11,7 @@ import { PersistGate } from "redux-persist/integration/react";
 function App() {
   return (
     <RecoilRoot>
-      {/* <BrowserRouter> */}
+      <BrowserRouter>
       <Provider store={store}>
         <PersistGate persistor={persistor}>
           <SecondaryNavBar />
@@ -18,7 +19,7 @@ function App() {
           <Footer />
         </PersistGate>
         </Provider>
-      {/* </BrowserRouter> */}
+      </BrowserRouter>
     </RecoilRoot>
   );
 }

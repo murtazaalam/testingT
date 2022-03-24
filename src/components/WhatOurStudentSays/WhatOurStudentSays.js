@@ -12,7 +12,7 @@ import feed4 from "../../assets/images/studentsImages/feedback4.jpg";
 import feed5 from "../../assets/images/studentsImages/feedback5.jpeg";
 import feed6 from "../../assets/images/studentsImages/feedback6.jpeg";
 import feed7 from "../../assets/images/studentsImages/feedback7.jpg";
-import feed8 from "../../assets/images/studentsImages/feedback8.JPG";
+import feed8 from "../../assets/images/studentsImages/feedback8.jpg";
 import feed9 from "../../assets/images/studentsImages/feedback9.jpg";
 import feed10 from "../../assets/images/studentsImages/feedback10.jpg";
 import feed11 from "../../assets/images/studentsImages/feedback11.jpg";

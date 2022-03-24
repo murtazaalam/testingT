@@ -5,10 +5,10 @@ import './main.css'
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-ReactDOM.render(
-    <HashRouter>
+ReactDOM.hydrate(
+    <React.StrictMode>
         <App />
-    </HashRouter>
+    </React.StrictMode>
     , 
     document.getElementById("root"));
 
